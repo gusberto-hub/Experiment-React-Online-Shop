@@ -1,0 +1,86 @@
+header {
+  position: fixed;
+  height: 4rem;
+  inset: 0;
+  z-index: 10;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0.5rem;
+  padding-left: 1rem;
+
+  background: white;
+  box-shadow: 0rem 0.2rem 0rem black;
+  border-radius: 1rem;
+  border: 1px solid black;
+  overflow: hidden;
+
+  h1 {
+    font-size: clamp(1rem, 3vw, 3rem);
+  }
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 6rem;
+    height: 100%;
+
+    font-size: 1.2rem;
+    color: currentColor;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    border-left: 1px solid #000;
+
+    p {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    span {
+      font-size: 0.8rem;
+      animation: zoomText 300ms linear;
+    }
+  }
+  .active {
+    background-color: black;
+    color: white;
+  }
+}
+
+@keyframes zoomText {
+  80% {
+    transform: scale(3);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.nav-login {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 1rem;
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  button {
+    padding: 0.4em 1em;
+  }
+}

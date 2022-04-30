@@ -1,0 +1,42 @@
+.cart-wrapper {
+  height: 80vh;
+  justify-content: flex-start;
+  padding: 2rem;
+  min-height: max-content;
+
+  .cart-title {
+    border-bottom: 5px solid black;
+    width: 100%;
+    margin-bottom: 0.3rem;
+  }
+
+  .cart-list {
+    width: 100%;
+    ul {
+      width: 100%;
+      li {
+        width: 100%;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 0.2fr 2fr 1fr 1fr 1fr;
+        border-bottom: 1px solid black;
+        text-align: left;
+        padding: 1rem 0;
+
+        .item-price {
+          text-align: right;
+        }
+
+        .item-quantity {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+    .cart-total {
+      text-align: right;
+      padding-top: 1rem;
+      font-size: 1rem;
+    }
+  }
+}

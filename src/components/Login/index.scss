@@ -1,0 +1,25 @@
+.login-wrapper {
+  height: 80vh;
+
+  .input-container {
+    width: 30ch;
+    position: relative;
+
+    input {
+      border: 1px solid black;
+      border-radius: 0;
+      padding: 0.5rem 0.6rem;
+      margin-bottom: 1rem;
+      font-size: inherit;
+      font-family: inherit;
+      width: 100%;
+
+      &::placeholder {
+        color: black;
+      }
+    }
+    p {
+      color: rgb(182, 8, 8);
+    }
+  }
+}
