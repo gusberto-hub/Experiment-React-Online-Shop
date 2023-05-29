@@ -1,15 +1,25 @@
 .login-wrapper {
-  height: 80vh;
+  max-width: 32rem;
+  margin: auto;
+  padding: 2rem;
+
+  h2,
+  p {
+    margin-bottom: 1rem;
+  }
+
+  form {
+    width: 100%;
+  }
 
   .input-container {
-    width: 30ch;
-    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
 
     input {
       border: 1px solid black;
       border-radius: 0;
       padding: 0.5rem 0.6rem;
-      margin-bottom: 1rem;
       font-size: inherit;
       font-family: inherit;
       width: 100%;
@@ -18,8 +28,10 @@
         color: black;
       }
     }
-    p {
+
+    p.error-message {
       color: rgb(182, 8, 8);
+      font-size: 0.8em;
     }
   }
 }

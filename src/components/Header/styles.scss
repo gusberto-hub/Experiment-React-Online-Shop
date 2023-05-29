@@ -19,6 +19,7 @@ header {
 
   h1 {
     font-size: clamp(1rem, 3vw, 3rem);
+    color: black;
   }
 }
 
@@ -28,18 +29,18 @@ header {
   justify-content: center;
   height: 100%;
 
-  a {
+  a:not(.btn-primary) {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
     width: 6rem;
     height: 100%;
 
-    font-size: 1.2rem;
-    color: currentColor;
     text-decoration: none;
     text-transform: uppercase;
+    color: inherit;
 
     border-left: 1px solid #000;
 
@@ -53,10 +54,11 @@ header {
       font-size: 0.8rem;
       animation: zoomText 300ms linear;
     }
-  }
-  .active {
-    background-color: black;
-    color: white;
+
+    &.active {
+      background-color: black;
+      color: white;
+    }
   }
 }
 

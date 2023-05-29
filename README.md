@@ -1,32 +1,32 @@
 # Simple Online Shop with React & Redux
 
-One more exercise for the SIT Academy's full-stack bootcamp. As a teaching assistant for this bootcamp i was also responsible for the solutios of the given exercises. Since React got updated recently i updated the package to the newest version and built this application as a possible approach for a solution. Besides the asked functionality and i styled it in a fresh not usual way.
-
+This repository contains a simple online shop application built with React and Redux. It was developed as an exercise for a full-stack bootcamp, where I served as a teaching assistant and was responsible for providing solutions to the given exercises. The application has been updated to the newest version of React and showcases a possible approach to solving the exercise.
 
 ## The Task
 
-It’s a project that consolidates React, Redux and for a little part React Router DOM. The students where asked to as far as possible. During the full time bootcamp they more or less 8 hours to solve this exercise.
+The goal of this project was to consolidate knowledge in React, Redux, and a small part of React Router DOM. Students were given approximately 8 hours to complete this exercise during the full-time bootcamp.
 
-### The Shop Features
+### Shop Features
 
-This simple Online Shop should have following features:
+This simple online shop includes the following features:
 
-- User authentication with login, which will then allow the user.
-- Shop overview with a list of items.
-- Shop overview in which a user can add an item to his/her shopping cart.
-- Shopping Cart list is updated with the new product as soon an item is added to the list.
-- Price for the individual items and the total cart is calculated.
+- User authentication with login, enabling users to access their shopping cart.
+- Shop overview displaying a list of items.
+- Ability for users to add items to their shopping cart from the shop overview.
+- Real-time update of the shopping cart as soon as an item is added.
+- Calculation of individual item prices and the total cart price.
 
-
-### Bonus tasks
-- Remove a product from the cart
-- Edit the quantity of a product in the cart
-- Add Taxes (not included in this solution)
-- Add Different currencies (not included in this solution)
+### Bonus Tasks
+- Removal of products from the cart.
+- Editing the quantity of a product in the cart.
+- Adding taxes (not included in this solution).
+- Supporting different currencies (not included in this solution).
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run the following scripts:
 
-### `npm start`
+### `npm run dev`
+
+This command runs the application in development mode. It automatically reloads the page whenever you make changes to the code.
 

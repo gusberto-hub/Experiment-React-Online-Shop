@@ -1,15 +1,14 @@
-import { combineReducers, createStore } from 'redux';
-import itemsReducer from './reducers/itemsReducer';
-import cartReducer from './reducers/cartReducer';
-import userReducer from './reducers/userReducer';
+import { configureStore } from '@reduxjs/toolkit'
+import itemsSlice from './slices/itemsSlice'
+import cartSlice from './slices/cartSlice'
+import userSlice from './slices/userSlice'
 
-const store = createStore(
-  combineReducers({
-    items: itemsReducer,
-    cart: cartReducer,
-    user: userReducer,
-  }),
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
+const store = configureStore({
+  reducer: {
+    user: userSlice,
+    items: itemsSlice,
+    cart: cartSlice,
+  },
+})
 
-export default store;
+export default store
